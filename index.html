@@ -16,9 +16,30 @@
       text-align: center;
       margin-bottom: 30px;
     }
-    h1 { color: red; }
-    h2 { margin-bottom: 10px; }
-    p { color: blue; }
+    h1 {
+      color: #ff4d4d;
+      animation: rainbow 6s linear infinite;
+    }
+    h2 {
+      margin-bottom: 10px;
+      animation: rainbow 6s linear infinite;
+    }
+    p {
+      color: #4a90e2;
+      animation: rainbow 6s linear infinite;
+    }
+    li {
+      animation: rainbow 6s linear infinite;
+    }
+    @keyframes rainbow {
+      0% { color: #ff4d4d; }
+      16% { color: #ff8c42; }
+      33% { color: #ffd166; }
+      50% { color: #06d6a0; }
+      66% { color: #118ab2; }
+      83% { color: #7b61ff; }
+      100% { color: #ff4d4d; }
+    }
     .section {
       background: #ffffff;
       border: 1px solid #c4d7f2;
