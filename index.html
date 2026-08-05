@@ -4,219 +4,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renter App Benefits</title>
+  <title>LeBron James Tribute</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background: #f2f8ff;
+      background: linear-gradient(135deg, #0f172a, #111827);
+      color: #f8fafc;
     }
     header {
       text-align: center;
       margin-bottom: 30px;
     }
     h1 {
-      color: #ff4d4d;
-      animation: rainbow 6s linear infinite;
+      font-size: 3rem;
+      margin: 0;
+      color: #fbbf24;
+      text-shadow: 0 0 15px rgba(251, 191, 36, 0.8);
     }
     h2 {
+      color: #38bdf8;
       margin-bottom: 10px;
-      animation: rainbow 6s linear infinite;
     }
     p {
-      color: #4a90e2;
-      animation: rainbow 6s linear infinite;
-    }
-    li {
-      animation: rainbow 6s linear infinite;
-    }
-    @keyframes rainbow {
-      0% { color: #ff4d4d; }
-      16% { color: #ff8c42; }
-      33% { color: #ffd166; }
-      50% { color: #06d6a0; }
-      66% { color: #118ab2; }
-      83% { color: #7b61ff; }
-      100% { color: #ff4d4d; }
+      line-height: 1.7;
+      color: #e2e8f0;
     }
     .section {
-      background: #ffffff;
-      border: 1px solid #c4d7f2;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4);
     }
-    #intro { color: orange; }
-    #what-h2 { color: #FFD700; }
-    #what-p { color: green; }
-    #upsides-h2 { color: blue; }
-    .upside-item { color: indigo; }
-    #downsides-h2 { color: purple; }
-    .downside-item { color: #FF1493; }
-    #conclusion-h2 { color: #00CED1; }
-    #conclusion-p { color: #FF69B4; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 8px; }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .stat-card {
+      background: #0f172a;
+      border: 1px solid rgba(96, 165, 250, 0.2);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+    }
+    .stat-card strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      color: #f8fafc;
+    }
+    .stat-card span {
+      font-size: 1.1rem;
+      color: #bfdbfe;
+    }
+    .tag {
+      display: inline-block;
+      margin: 4px 4px 0 0;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(59, 130, 246, 0.2);
+      color: #bfdbfe;
+      font-size: 0.95rem;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 999px;
+      background: #f59e0b;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .button:hover {
+      transform: translateY(-2px);
+      background: #facc15;
+    }
+    #quote {
+      font-style: italic;
+      color: #93c5fd;
+    }
+    #favoriteEra {
+      background: #1e293b;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 16px;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 1rem;
+    }
+    .fun-facts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .fun-facts li {
+      margin-bottom: 10px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .fun-facts li::before {
+      content: '🏀';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>renters market</h1>
-    <p id="intro">A renter app can make renting easier, faster, and more transparent for both renters and property owners.</p>
+    <h1>LeBron James</h1>
+    <p id="quote">"I like criticism. It makes you stronger." — LeBron James</p>
   </header>
 
   <div class="section">
-    <h2 id="what-h2">What the app does</h2>
-    <p id="what-p">An app for renters helps users find and rent items like toys, cars, electronics, and equipment. Users can browse available items, compare prices, book rentals, submit applications, and track payments in one place.</p>
-  </div>
-
-  <div class="section">
-    <h2 id="upsides-h2">Upsides</h2>
-    <ul>
-      <li class="upside-item">Convenience: renters can search listings anytime and filter by budget, location, and amenities.</li>
-      <li class="upside-item">Efficiency: applications, rental agreements, and payments are managed digitally.</li>
-      <li class="upside-item">Transparency: clear listing details, reviews, and status updates reduce uncertainty.</li>
-      <li class="upside-item">Communication: renters and owners can message each other directly through the app.</li>
-      <li class="upside-item">Organization: all rental documents, schedules, and payment history stay in one place.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2 id="downsides-h2">Downsides</h2>
-    <ul>
-      <li class="downside-item">Learning curve: some users may take time to get used to a new digital system.</li>
-      <li class="downside-item">Dependence on internet access: the app works best when users have a reliable connection.</li>
-      <li class="downside-item">Privacy concerns: users need assurance that personal information is protected.</li>
-      <li class="downside-item">Data accuracy: outdated or incorrect listings can still appear if not maintained.</li>
-      <li class="downside-item">Costs: development and maintenance require investment from the app provider.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2 id="conclusion-h2">Conclusion</h2>
-    <p id="conclusion-p">A renter app offers strong benefits by simplifying the rental process and improving communication. With careful design, security, and ongoing support, it can become a trusted tool for people searching for items to rent.</p>
-  </div>
-
-  <div class="section">
-    <h2 style="color: red;">Terms & Conditions</h2>
-    <p style="color: red;">If you scam a customer, they do not receive their product, or you sell inappropriate items, you will be taken down and possibly sued.</p>
-  </div>
-
-  <div class="section">
-    <h2 style="color: #20B2AA;">Rate This Idea</h2>
-    <p style="color: #20B2AA;">Do you think this renter app is a good idea?</p>
-    <div style="text-align: center; margin-top: 20px;">
-      <div style="margin-bottom: 20px;">
-        <label for="nameInput" style="color: #20B2AA; font-weight: bold;">Enter your name:</label><br>
-        <input type="text" id="nameInput" style="width: 250px; padding: 10px; margin-top: 10px; font-size: 16px; border: 2px solid #20B2AA;">
-        <button id="submitBtn" style="padding: 10px 20px; margin-left: 10px; font-size: 16px; background-color: #20B2AA; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit Name</button>
+    <h2>About LeBron</h2>
+    <p>LeBron James is one of the greatest basketball players of all time. Born December 30, 1984, in Akron, Ohio, he has won multiple NBA championships, earned MVP honors, and led his teams to numerous Finals appearances. His versatility, leadership, and work ethic have defined a career that spans decades.</p>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <strong>Position</strong>
+        <span>Small Forward / Power Forward</span>
       </div>
-      <div id="starRating" style="font-size: 40px; cursor: pointer; letter-spacing: 10px; margin: 20px 0;">
-        <span class="star" data-value="1" style="color: #cccccc;">★</span>
-        <span class="star" data-value="2" style="color: #cccccc;">★</span>
-        <span class="star" data-value="3" style="color: #cccccc;">★</span>
-        <span class="star" data-value="4" style="color: #cccccc;">★</span>
-        <span class="star" data-value="5" style="color: #cccccc;">★</span>
+      <div class="stat-card">
+        <strong>NBA Teams</strong>
+        <span>Cleveland Cavaliers, Miami Heat, Los Angeles Lakers</span>
       </div>
-      <div id="ratingResult" style="margin-top: 15px; font-size: 16px; font-weight: bold;"></div>
-      <div id="voteTally" style="margin-top: 10px; padding: 10px; background-color: #f0f8ff; border-radius: 5px;"></div>
+      <div class="stat-card">
+        <strong>Championships</strong>
+        <span>4× NBA Champion</span>
+      </div>
+      <div class="stat-card">
+        <strong>MVP Awards</strong>
+        <span>4× NBA MVP</span>
+      </div>
     </div>
   </div>
 
+  <div class="section">
+    <h2>Career Highlights</h2>
+    <div>
+      <span class="tag">Rookie of the Year</span>
+      <span class="tag">All-Star</span>
+      <span class="tag">NBA Finals MVP</span>
+      <span class="tag">Scoring Champion</span>
+      <span class="tag">All-NBA</span>
+    </div>
+    <ul class="fun-facts">
+      <li>Fourth player in NBA history to win Finals MVP with three different teams.</li>
+      <li>Youngest player ever to reach 30,000 career points.</li>
+      <li>Led the Cleveland Cavaliers to their first championship in 2016.</li>
+      <li>Co-founded the <strong>LeBron James Family Foundation</strong> to support education and youth.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Favorite Era</h2>
+    <p>Select your favorite LeBron era to see a short description of why it stands out.</p>
+    <select id="eraSelect">
+      <option value="rookie">Rookie Season</option>
+      <option value="miami">Miami Heat Era</option>
+      <option value="cavs">Cleveland Return</option>
+      <option value="lakers">Lakers Championship</option>
+      <option value="legacy">Legacy Years</option>
+    </select>
+    <div id="favoriteEra"></div>
+  </div>
+
+  <div class="section">
+    <h2>Interactive Moment</h2>
+    <p>Click the button to get a motivational LeBron challenge message.</p>
+    <button class="button" id="challengeBtn">Show Challenge</button>
+    <p id="challengeText" style="margin-top: 16px; color: #c7d2fe;"></p>
+  </div>
+
   <script>
-    let votes = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0};
-    let voters = [];
-    let currentUser = null;
+    const eraDescriptions = {
+      rookie: 'LeBron burst onto the NBA scene in 2003 with the Cleveland Cavaliers, quickly becoming a rising superstar and Rookie of the Year.',
+      miami: 'During the Miami Heat era, LeBron won back-to-back championships and developed his all-around game alongside Dwyane Wade and Chris Bosh.',
+      cavs: 'LeBron returned to Cleveland and delivered the city its first NBA title in 2016, overcoming a 3-1 deficit against the Golden State Warriors.',
+      lakers: 'With the Los Angeles Lakers, LeBron won the 2020 championship in the Orlando bubble and cemented his status as a generational leader.',
+      legacy: 'In his later years, LeBron continues to break records, mentor young stars, and build a lasting legacy on and off the court.'
+    };
 
-    // Load data
-    if (localStorage.getItem('votes')) votes = JSON.parse(localStorage.getItem('votes'));
-    if (localStorage.getItem('voters')) voters = JSON.parse(localStorage.getItem('voters'));
+    const challengeMessages = [
+      'Play every day like it is your last chance to improve.',
+      'Leadership is about making others better because you are better.',
+      'Stay hungry, stay humble, and never stop working.',
+      'Success is not an accident; it is the result of preparation and effort.',
+      'Find your purpose and let it drive every move.'
+    ];
 
-    // Submit name
-    document.getElementById('submitBtn').addEventListener('click', function() {
-      const name = document.getElementById('nameInput').value.trim();
-      if (!name) {
-        document.getElementById('ratingResult').innerHTML = '<span style="color: red;">Please enter your name.</span>';
-        return;
-      }
-      if (voters.includes(name.toLowerCase())) {
-        document.getElementById('ratingResult').innerHTML = '<span style="color: red;">Sorry, you already voted!</span>';
-        return;
-      }
-      currentUser = name;
-      document.getElementById('nameInput').disabled = true;
-      document.getElementById('submitBtn').disabled = true;
-      document.getElementById('nameInput').style.backgroundColor = '#ccc';
-      document.getElementById('submitBtn').style.backgroundColor = '#999';
-      document.getElementById('ratingResult').innerHTML = '<span style="color: blue;">Click a star to vote!</span>';
-    });
+    const eraSelect = document.getElementById('eraSelect');
+    const favoriteEra = document.getElementById('favoriteEra');
+    const challengeBtn = document.getElementById('challengeBtn');
+    const challengeText = document.getElementById('challengeText');
 
-    // Star voting
-    document.querySelectorAll('.star').forEach(star => {
-      star.addEventListener('click', function() {
-        if (!currentUser) {
-          document.getElementById('ratingResult').innerHTML = '<span style="color: red;">Submit your name first!</span>';
-          return;
-        }
-        const rating = this.getAttribute('data-value');
-        votes[rating]++;
-        voters.push(currentUser.toLowerCase());
-        localStorage.setItem('votes', JSON.stringify(votes));
-        localStorage.setItem('voters', JSON.stringify(voters));
-
-        // Show all stars up to this one as yellow
-        document.querySelectorAll('.star').forEach((s, i) => {
-          if (i < rating) s.style.color = 'yellow';
-          s.style.pointerEvents = 'none';
-        });
-
-        document.getElementById('ratingResult').innerHTML = '<span style="color: green;">Thank you for voting, ' + currentUser + '!</span>';
-        updateTally();
-
-        // Add thank you message
-        setTimeout(() => {
-          const msg = document.createElement('div');
-          msg.style.marginTop = '20px';
-          msg.style.padding = '15px';
-          msg.style.backgroundColor = '#e8f5e9';
-          msg.style.borderRadius = '5px';
-          msg.style.textAlign = 'center';
-          msg.style.color = '#2e7d32';
-          msg.style.fontWeight = 'bold';
-          msg.innerHTML = '🎉 Thank you for your vote! 🎉';
-          document.getElementById('voteTally').parentElement.appendChild(msg);
-        }, 300);
-      });
-
-      star.addEventListener('mouseover', function() {
-        if (currentUser) {
-          const value = this.getAttribute('data-value');
-          document.querySelectorAll('.star').forEach(s => {
-            s.style.color = s.getAttribute('data-value') <= value ? 'gold' : '#cccccc';
-          });
-        }
-      });
-    });
-
-    document.getElementById('starRating').addEventListener('mouseout', function() {
-      document.querySelectorAll('.star').forEach(s => s.style.color = '#cccccc');
-    });
-
-    function updateTally() {
-      const total = Object.values(votes).reduce((a, b) => a + b, 0);
-      let html = '<strong>Vote Tally:</strong><br>';
-      for (let i = 1; i <= 5; i++) {
-        const count = votes[i] || 0;
-        const pct = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
-        html += i + ' Star' + (i > 1 ? 's' : '') + ': ' + count + ' vote' + (count !== 1 ? 's' : '') + ' (' + pct + '%)<br>';
-      }
-      html += '<strong>Total: ' + total + '</strong>';
-      document.getElementById('voteTally').innerHTML = html;
+    function updateFavoriteEra() {
+      favoriteEra.textContent = eraDescriptions[eraSelect.value];
     }
 
-    updateTally();
+    eraSelect.addEventListener('change', updateFavoriteEra);
+    updateFavoriteEra();
+
+    challengeBtn.addEventListener('click', () => {
+      const message = challengeMessages[Math.floor(Math.random() * challengeMessages.length)];
+      challengeText.textContent = message;
+    });
   </script>
 </body>
 </html>
